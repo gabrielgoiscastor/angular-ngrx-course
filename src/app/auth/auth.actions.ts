@@ -9,15 +9,13 @@ export enum AuthActionTypes {
 export class Login implements Action {
 
   constructor(readonly payload: {user: User}){
-    console.log('LoginAction');
-    console.log(this.payload);
   }
 
   readonly type = AuthActionTypes.LoginAction;
 }
 
-export class LogoutAction implements Action {
+export class Logout implements Action {
   readonly type = AuthActionTypes.LogoutAction;
 }
 
-export type AuthActions = Login;
+export type AuthActions = Login | Logout;
