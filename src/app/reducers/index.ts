@@ -6,8 +6,6 @@ import {
   MetaReducer
 } from '@ngrx/store';
 import { environment } from '../../environments/environment';
-import { User } from '../model/user.model';
-import { AuthActionTypes } from '../auth/auth.actions';
 
 export interface AppState {
 }
